@@ -13,15 +13,10 @@ This project implements a time series forecasting model for energy consumption a
 1. Clone the repository:
    ```
    git clone https://github.com/samiamjidkhan/energy-consumption-forecast.git
+   cd energy-consumption-forecast
    ```
 
-2. Create a virtual environment (optional but recommended):
-   ```
-   python3 -m venv venv
-   source venv/bin/activate
-   ```
-
-3. Install the required packages:
+2. Install the required packages:
    ```
    pip install -r requirements.txt
    ```
