@@ -41,11 +41,9 @@ This project implements a time series forecasting model for energy consumption a
    python api_script.py
    ```
 
-   The API will be available at `http://localhost:5000`.
-
 2. To get a prediction, use a GET request to the `/predict` endpoint with the `N` parameter:
    ```
-   curl "http://localhost:5000/predict?N=8"
+   curl "http://127.0.0.1:5000/predict?N=8"
    ```
 
    This will return a JSON response with the predicted energy consumption for 8 hours ahead.
