@@ -1,7 +1,6 @@
 from flask import Flask, request, jsonify
-from marshmallow import Schema, fields, validate, ValidationError
+from marshmallow import Schema, fields, ValidationError
 import joblib
-from prophet import Prophet
 
 app = Flask(__name__)
 
