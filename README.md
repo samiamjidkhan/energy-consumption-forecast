@@ -4,7 +4,7 @@ This project implements a time series forecasting model for energy consumption a
 
 ## Prerequisites
 
-- Python 3.7+
+- Python
 - pip (Python package installer)
 - git
 
