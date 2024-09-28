@@ -32,7 +32,7 @@ This project implements a time series forecasting model for energy consumption a
    python train_model.py
    ```
 
-   This will create a `prophet_model.joblib` file in the project directory.
+   This will create a `serialized_model.json` file in the project directory.
 
 ### Running the API
 
