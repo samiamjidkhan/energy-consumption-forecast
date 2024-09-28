@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from marshmallow import Schema, fields, ValidationError
-import joblib
+from prophet.serialize import model_from_json
 
 app = Flask(__name__)
 
@@ -25,7 +25,8 @@ def predict():
 
     # Load the model
     try:
-        model = joblib.load('prophet_model.joblib')
+        with open('serialized_model.json', 'r') as fin:
+            model = model_from_json(fin.read())
     except FileNotFoundError:
         return jsonify({"error": "Model file not found"}), 500
 
